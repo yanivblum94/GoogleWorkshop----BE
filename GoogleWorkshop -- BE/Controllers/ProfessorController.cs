@@ -35,7 +35,7 @@ namespace GoogleWorkshop____BE.Controllers
         {
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
             var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
-            var toRet = dbList.Where(prof => string.Equals(prof.Name, name));
+            var toRet = dbList.Where(prof => prof.Name.Contains(name));
             return new JsonResult(dbList);
         }
 

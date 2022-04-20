@@ -15,6 +15,8 @@ namespace GoogleWorkshop____BE.Models
         public double DiffRating { get; set; }
         public string EmailAddr { get; set; }
         public string WebsiteAddr { get; set; }
+        public string LinkedinProfile { get; set; }
+        public string TwitterProfile { get; set; }
         public List<Review> Reviews { get; set; }
 
         public Professor() { }
@@ -38,6 +40,8 @@ namespace GoogleWorkshop____BE.Models
                    DiffRating == professor.DiffRating &&
                    string.Equals(EmailAddr, professor.EmailAddr) &&
                    string.Equals(WebsiteAddr, professor.WebsiteAddr) &&
+                   string.Equals(TwitterProfile, professor.TwitterProfile) &&
+                   string.Equals(LinkedinProfile, professor.LinkedinProfile) &&
                    Enumerable.SequenceEqual(Reviews.OrderBy(e=>e), professor.Reviews.OrderBy(e => e));
         }
 
