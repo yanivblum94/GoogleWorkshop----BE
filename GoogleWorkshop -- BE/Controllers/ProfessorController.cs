@@ -10,8 +10,8 @@ using MongoDB.Driver;
 
 namespace GoogleWorkshop____BE.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class ProfessorController : ControllerBase
     {
 
@@ -40,10 +40,13 @@ namespace GoogleWorkshop____BE.Controllers
         }
 
         [HttpPut]
-        public async Task<JsonResult> UpdateReview(Professor prof, Review rev)
+        public async Task<JsonResult> UpdateReview(Review rev)
         {
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
-
+            var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
+            var prof = dbList.FirstOrDefault(professor => professor.Id.Equals(rev.ProfId));
+            if(prof == null)
+                return new JsonResult("Update did not work, profId does not exist in the DB");
             prof.UpdateReview(rev);
 
             var filter = Builders<Professor>.Filter.Eq("Id", prof.Id);
