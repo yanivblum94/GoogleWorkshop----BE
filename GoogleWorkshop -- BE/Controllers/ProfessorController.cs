@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace GoogleWorkshop____BE.Controllers
 {
@@ -30,28 +31,30 @@ namespace GoogleWorkshop____BE.Controllers
             var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
             return new JsonResult(dbList);
         }
+        [Route("ByName")]
         [HttpGet]
         public JsonResult GetByName(string name)
         {
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
-            var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
-            var toRet = dbList.Where(prof => prof.Name.Contains(name));
-            return new JsonResult(dbList);
+            var collection = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors");
+            var toRet = collection.AsQueryable<Professor>().Where(prof => prof.Name.Contains(name));
+            return new JsonResult(toRet);
         }
 
         [HttpPut]
-        public async Task<JsonResult> UpdateReview(Review rev)
+        public async Task<JsonResult> UpdateReview([FromBody]Review rev)
         {
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
-            var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
-            var prof = dbList.FirstOrDefault(professor => professor.Id.Equals(rev.ProfId));
+            var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable<Professor>();
+            var objProfId = new ObjectId(rev.ProfId);
+            var prof = dbList.FirstOrDefault(professor => professor.Id.Equals(objProfId));
             if(prof == null)
                 return new JsonResult("Update did not work, profId does not exist in the DB");
             prof.UpdateReview(rev);
 
-            var filter = Builders<Professor>.Filter.Eq("Id", prof.Id);
+            var filter = Builders<Professor>.Filter.Eq("_id", objProfId);
 
-            await dbClient.GetDatabase("testdb").GetCollection<Professor>("Department").ReplaceOneAsync(filter, prof);
+            await dbClient.GetDatabase("testdb").GetCollection<Professor>("Professors").ReplaceOneAsync(filter, prof);
 
             return new JsonResult("Review added Successfully");
         }

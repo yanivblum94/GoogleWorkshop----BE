@@ -8,9 +8,7 @@ namespace GoogleWorkshop____BE.Models
 {
     public class Review
     { 
-
-        public ObjectId ID { get; set; }
-        public ObjectId ProfId { get; set; }
+        public string ProfId { get; set; }
         public int TotalRating { get; set; }
         public int DiffRating { get; set; }
         public int TreatRating { get; set; }

@@ -1,0 +1,354 @@
+[
+ {
+   "Name": "ד\"ר אורי שטמר",
+   "EmailAddr": "uristemmer@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.uri.co.il",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר אייל רונן",
+   "EmailAddr": "eyalronen@tauex.tau.ac.il",
+   "WebsiteAddr": "https://eyalro.net",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר אמיר רובינשטיין",
+   "EmailAddr": "amirr@tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~amirr",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר גיל כהן",
+   "EmailAddr": "gil@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.gilcohen.org",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר יאיר כרמון",
+   "EmailAddr": "ycarmon@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~ycarmon",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר מחמוד שריף",
+   "EmailAddr": "mahmoods@cs.tau.ac.il",
+   "WebsiteAddr": "http://www.cs.tau.ac.il/~mahmoods/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר נדב כהן",
+   "EmailAddr": "cohennadav@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cohennadav.com",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר עומר פנט",
+   "EmailAddr": "omerpa@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר עמית ברמנו",
+   "EmailAddr": "amberman@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~amberman/",
+   "LinkedinProfile": "https://www.linkedin.com/in/amit-haim-bermano-10885857/",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר עמר לוי",
+   "EmailAddr": "levyomer@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~levyomer/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר רני הוד",
+   "EmailAddr": "ranihod@tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "ד\"ר תומר קורן",
+   "EmailAddr": "tkoren@tauex.tau.ac.il",
+   "WebsiteAddr": "https://tomerkoren.github.io",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אדם מוריסון",
+   "EmailAddr": "mad@cs.tau.ac.il",
+   "WebsiteAddr": "http://www.cs.tau.ac.il/~mad",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אורי להב",
+   "EmailAddr": "orilahav@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~orilahav/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אורי צוויק",
+   "EmailAddr": "zwick@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~zwick",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אלחנן בורנשטין",
+   "EmailAddr": "elbo@tauex.tau.ac.il",
+   "WebsiteAddr": "https://borensteinlab.com/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אלכסנדר רבינוביץ",
+   "EmailAddr": "rabinoa@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~rabinoa",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אמיר בנבנישתי שפילקה",
+   "EmailAddr": "shpilka@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~shpilka/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אמיר גלוברזון",
+   "EmailAddr": "gamir@tauex.tau.ac.il",
+   "WebsiteAddr": "https://cs3801.wixsite.com/amirgloberson",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' אמנון תא שמע",
+   "EmailAddr": "amnon@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~amnon",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' דן הלפרין",
+   "EmailAddr": "danha@tauex.tau.ac.il",
+   "WebsiteAddr": "https://acg.cs.tau.ac.il/danhalperin",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' דניאל דויטש",
+   "EmailAddr": "danielde@tauex.tau.ac.il",
+   "WebsiteAddr": "https://cs.tau.ac.il/~danielde",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' דניאל כהן-אור",
+   "EmailAddr": "dcor@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~dcor",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' חיים קפלן",
+   "EmailAddr": "haimk@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.math.tau.ac.il/~haimk",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' חנוך לוי",
+   "EmailAddr": "hanoch@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.math.tau.ac.il/~hanoch",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' טובה מילוא",
+   "EmailAddr": "milo@cs.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~milo",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' יהונתן ברנט",
+   "EmailAddr": "joberant@cs.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~joberant/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' יוסי מטיאס",
+   "EmailAddr": "yossi.matias@gmail.com",
+   "WebsiteAddr": "http://www.cs.tau.ac.il/~matias",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' יוסף [יוסי] עזר",
+   "EmailAddr": "azar@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~azar",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' יפתח אילן היטנר",
+   "EmailAddr": "iftachh@tauex.tau.ac.il",
+   "WebsiteAddr": "https://Https://www.cs.tau.ac.il/~iftachh",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' ישי מנצור",
+   "EmailAddr": "mansour@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~mansour",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' ליאור וולף",
+   "EmailAddr": "wolf@cs.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~wolf",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' מיכל פלדמן",
+   "EmailAddr": "mfeldman@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~mfeldman/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' ניר בטנסקי",
+   "EmailAddr": "nirbitan@tauex.tau.ac.il",
+   "WebsiteAddr": "https://sites.google.com/site/nirbitansky/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' נעם רינצקי",
+   "EmailAddr": "maon@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~maon/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' סיון טולדו",
+   "EmailAddr": "stoledo@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/~stoledo",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' רודד שרן",
+   "EmailAddr": "roded@tauex.tau.ac.il",
+   "WebsiteAddr": "https:///www.cs.tau.ac.il/~roded",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' רון שמיר",
+   "EmailAddr": "rshamir@tau.ac.il",
+   "WebsiteAddr": "https://acgt.cs.tau.ac.il/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' רותם אושמן",
+   "EmailAddr": "roshman@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~roshman/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' שחר מעוז",
+   "EmailAddr": "maozs@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~maozs/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' שירי צ'צ'יק",
+   "EmailAddr": "schechik@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~schechik/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' שמואל ספרא",
+   "EmailAddr": "safra@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/~safra",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' שמואל שגיב",
+   "EmailAddr": "msagiv@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.cs.tau.ac.il/~msagiv",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ },
+ {
+   "Name": "פרופ' שרון שוהם בוכבינדר",
+   "EmailAddr": "sharon.shoham@cs.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "מדעי המחשב"
+ }
+]

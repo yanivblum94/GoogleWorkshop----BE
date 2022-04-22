@@ -1,0 +1,242 @@
+[
+ {
+   "Name": "ד\"ר אבנר פליישר",
+   "EmailAddr": "avnerfleisch@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר איליה קמינקר",
+   "EmailAddr": "iliakam@tauex.tau.ac.il",
+   "WebsiteAddr": "https://iliakam.wixsite.com/website",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר ברק הירשברג",
+   "EmailAddr": "hirshb@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/~hirshb/",
+   "LinkedinProfile": "https://www.linkedin.com/in/barak-hirshberg/",
+   "TwitterProfile": "https://twitter.com/barak_hirshberg",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר טל שוורץ",
+   "EmailAddr": "talschwartz@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.nanomollab.sites.tau.ac.il",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר מחמד גבארה",
+   "EmailAddr": "jbaram@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.jbaralab.sites.tau.ac.il",
+   "LinkedinProfile": "https://www.linkedin.com/in/muhammad-jbara-0b1755110/",
+   "TwitterProfile": "https://twitter.com/JbaraM90",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר עמית יחזקאל סיט",
+   "EmailAddr": "amitsitt@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.programmatter.sites.tau.ac.il/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר רעיה סורקין",
+   "EmailAddr": "rsorkin@tauex.tau.ac.il",
+   "WebsiteAddr": "https://sorkinraya.wixsite.com/sorkinlab",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "ד\"ר שלומי ראובני",
+   "EmailAddr": "shlomire@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.sreuveni.com/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' אמיר גולדבורט",
+   "EmailAddr": "amirgo@tauex.tau.ac.il",
+   "WebsiteAddr": "https://kuwari.tau.ac.il",
+   "LinkedinProfile": "https://www.linkedin.com/in/amir-goldbourt-13a9a5b/",
+   "TwitterProfile": "https://twitter.com/GoldbourtNMRLab",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' ארקדי ויגלוק",
+   "EmailAddr": "avigal@tauex.tau.ac.il",
+   "WebsiteAddr": "https://vigaloklab.wixsite.com/arkadivigalok",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' גיא כהן",
+   "EmailAddr": "gcohen@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/~gcohen",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' גיל מרקוביץ",
+   "EmailAddr": "gilmar@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/chemistry/markovich",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' דורון שבת",
+   "EmailAddr": "chdoron@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www1.tau.ac.il/~shabat/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' דיאנה גולודניצקי",
+   "EmailAddr": "golod@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.solid-electrochemistry.sites.tau.ac.il",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' חיים דימנט",
+   "EmailAddr": "hdiamant@tauex.tau.ac.il",
+   "WebsiteAddr": "http://www.tau.ac.il/~hdiamant",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' יובל אבנשטיין",
+   "EmailAddr": "uv@tauex.tau.ac.il",
+   "WebsiteAddr": "http://www.nanobiophotonix.com",
+   "LinkedinProfile": "https://il.linkedin.com/in/yuval-ebenstein-89373b29",
+   "TwitterProfile": "https://twitter.com/hagenom?lang=en",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' יורם זלצר",
+   "EmailAddr": "selzer@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' יורם כהן",
+   "EmailAddr": "ycohen@tauex.tau.ac.il",
+   "WebsiteAddr": "https://lmicentertau.wixsite.com/yoramcohen",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' יעל רוכמן",
+   "EmailAddr": "roichman@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' מיכאל גוזין",
+   "EmailAddr": "cogozin@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/chemistry/gozin/",
+   "LinkedinProfile": "https://www.linkedin.com/in/michael-gozin-8170b343/",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' מיכה פרידמן",
+   "EmailAddr": "mfridman@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.fridman-lab.sites.tau.ac.il/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' משה פורטנוי",
+   "EmailAddr": "portnoy@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' משה קול",
+   "EmailAddr": "moshekol@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.tau.ac.il/chemistry/Kol.html",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' עודד הוד",
+   "EmailAddr": "odedhod@tauex.tau.ac.il",
+   "WebsiteAddr": "http://www.tau.ac.il/~odedhod",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' ערן רבני",
+   "EmailAddr": "eran.rabani@gmail.com",
+   "WebsiteAddr": "https://www.tau.ac.il/~rabani",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' פרננדו פטולסקי",
+   "EmailAddr": "fernando@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' רומן דוברובצקי",
+   "EmailAddr": "rdobrove@tauex.tau.ac.il",
+   "WebsiteAddr": "https://namorij.wix.com/roman-dobrovetsky",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' רועי אמיר",
+   "EmailAddr": "amirroey@tauex.tau.ac.il",
+   "WebsiteAddr": "https://www.roeyamirgroup.sites.tau.ac.il",
+   "LinkedinProfile": "https://www.linkedin.com/in/roey-amir-3b171a50/",
+   "TwitterProfile": "https://twitter.com/RoeyJAmir",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' שמואל כרמלי",
+   "EmailAddr": "carmeli@tauex.tau.ac.il",
+   "WebsiteAddr": "",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ },
+ {
+   "Name": "פרופ' שר לי קר פליישר",
+   "EmailAddr": "sharlyf@tauex.tau.ac.il",
+   "WebsiteAddr": "https://sites.google.com/site/terahertzandultrafastlab/",
+   "LinkedinProfile": "",
+   "TwitterProfile": "",
+   "Faculty": "כימיה"
+ }
+]
