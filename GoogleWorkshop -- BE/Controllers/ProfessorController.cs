@@ -46,15 +46,15 @@ namespace GoogleWorkshop____BE.Controllers
         {
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
             var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable<Professor>();
-            var objProfId = new ObjectId(rev.ProfId);
+            var objProfId =  ObjectId.Parse(rev.ProfId);
             var prof = dbList.FirstOrDefault(professor => professor.Id.Equals(objProfId));
             if(prof == null)
                 return new JsonResult("Update did not work, profId does not exist in the DB");
             prof.UpdateReview(rev);
 
-            var filter = Builders<Professor>.Filter.Eq("_id", objProfId);
+            var filter = Builders<Professor>.Filter.Eq(p => p.Id, objProfId);
 
-            await dbClient.GetDatabase("testdb").GetCollection<Professor>("Professors").ReplaceOneAsync(filter, prof);
+            var res = await dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").ReplaceOneAsync(filter, prof);
 
             return new JsonResult("Review added Successfully");
         }
