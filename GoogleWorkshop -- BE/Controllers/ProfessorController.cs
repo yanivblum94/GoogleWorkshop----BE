@@ -41,6 +41,17 @@ namespace GoogleWorkshop____BE.Controllers
             return new JsonResult(toRet);
         }
 
+        [Route("ById")]
+        [HttpGet]
+        public JsonResult GetById(string id)
+        {
+            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
+            var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable<Professor>();
+            var objProfId = ObjectId.Parse(id);
+            var prof = dbList.FirstOrDefault(professor => professor.Id.Equals(objProfId));
+            return new JsonResult(prof);
+        }
+
         [HttpPut]
         public async Task<JsonResult> UpdateReview([FromBody]Review rev)
         {
