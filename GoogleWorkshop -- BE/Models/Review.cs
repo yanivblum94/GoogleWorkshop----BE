@@ -17,10 +17,11 @@ namespace GoogleWorkshop____BE.Models
         public bool TakeAgain { get; set; }
         public string Comment { get; set; }
         public string Course { get; set; }
+        public string User { get; set; }
 
         public Review() { }
 
-        public Review(int totalRating, int diffRating, int treatRating, bool materialsUpdate, bool recordsUpdate, bool takeAgain, string comment, string course)
+        public Review(int totalRating, int diffRating, int treatRating, bool materialsUpdate, bool recordsUpdate, bool takeAgain, string comment, string course, string user)
         {
             TotalRating = totalRating;
             DiffRating = diffRating;
@@ -30,6 +31,7 @@ namespace GoogleWorkshop____BE.Models
             TakeAgain = takeAgain;
             Comment = comment;
             Course = course;
+            User = user;
         }
 
         public override bool Equals(object obj)
@@ -42,7 +44,8 @@ namespace GoogleWorkshop____BE.Models
                    RecordsUpdate == review.RecordsUpdate &&
                    TakeAgain == review.TakeAgain &&
                    string.Equals(Comment, review.Comment) &&
-                   string.Equals(Course, review.Course);
+                   string.Equals(Course, review.Course)&&
+                   string.Equals(User, review.User); ;
         }
 
         public override int GetHashCode()
