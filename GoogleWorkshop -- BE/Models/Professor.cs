@@ -39,8 +39,7 @@ namespace GoogleWorkshop____BE.Models
             Id = id;
             Name = name;
             Faculty = faculty;
-            TotalRating = totalRating;
-            DiffRating = diffRating;
+            TotalRating = totalRating; DiffRating = diffRating;
             TreatRating = treatRating;
             MaterialsUpdateOdds = materialsUpdateOdds;
             RecordsUpdateOdds = recordsUpdateOdds;
