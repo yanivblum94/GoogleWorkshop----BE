@@ -25,6 +25,7 @@ namespace GoogleWorkshop____BE.Models
         public string LinkedinProfile { get; set; }
         public string TwitterProfile { get; set; }
         public List<string> Courses { get; set; }
+        public int[] RatingValuesNums { get; set; }
         public int[] CoursesReviewsCounts { get; set; }
         public int[] CoursesDifficultiesSum { get; set; }
         public int[] CoursesMaterialsTrues { get; set; }
@@ -35,13 +36,14 @@ namespace GoogleWorkshop____BE.Models
 
         public Professor() { }
 
-        public Professor(string name, string faculty, double totalRating, int[] coursesReviewsCounts, int[] coursesDifficultiesSum, int[] coursesMaterialsTrues,
+        public Professor(string name, string faculty, double totalRating, int[] ratingValuesNums, int[] coursesReviewsCounts, int[] coursesDifficultiesSum, int[] coursesMaterialsTrues,
             int[] coursesRecordsTrues, int[] coursesTakeAgainTrues, double diffRating, double treatRating, double materialsUpdateOdds, double recordsUpdateOdds,
             double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile)
         {
             Name = name;
             Faculty = faculty;
-            TotalRating = totalRating; DiffRating = diffRating;
+            TotalRating = totalRating; 
+            DiffRating = diffRating;
             TreatRating = treatRating;
             MaterialsUpdateOdds = materialsUpdateOdds;
             RecordsUpdateOdds = recordsUpdateOdds;
@@ -50,6 +52,7 @@ namespace GoogleWorkshop____BE.Models
             WebsiteAddr = websiteAddr;
             LinkedinProfile = linkedinProfile;
             TwitterProfile = twitterProfile;
+            RatingValuesNums = ratingValuesNums;
             CoursesReviewsCounts = coursesReviewsCounts;
             CoursesDifficultiesSum = coursesDifficultiesSum;
             CoursesMaterialsTrues = coursesMaterialsTrues;
@@ -60,6 +63,7 @@ namespace GoogleWorkshop____BE.Models
         public override bool Equals(object obj)
         {
             return obj is Professor professor &&
+                   Array.Equals(RatingValuesNums, professor.RatingValuesNums) &&
                    Array.Equals(CoursesReviewsCounts, professor.CoursesReviewsCounts) &&
                    Array.Equals(CoursesDifficultiesSum, professor.CoursesDifficultiesSum) &&
                    Array.Equals(CoursesMaterialsTrues, professor.CoursesMaterialsTrues) &&
@@ -106,6 +110,7 @@ namespace GoogleWorkshop____BE.Models
             const int maxNumCourses = 10;
 
             int ratingSum = 0, diffSum = 0, treatSum = 0, materialsTrues = 0, recordsTrues = 0, takeAgainnTrues = 0;
+            int[] ratingValuesNums = new int[5] { 0, 0, 0, 0, 0 };
             int[] courseReviewCount = new int[maxNumCourses] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
             int[] courseDiffSum = new int[maxNumCourses] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             int[] courseMaterialTrues = new int[maxNumCourses] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -134,6 +139,7 @@ namespace GoogleWorkshop____BE.Models
                     }
                 }
                 ratingSum += rev.TotalRating;
+                ratingValuesNums[rev.TotalRating - 1]++;
                 diffSum += rev.DiffRating;
                 treatSum += rev.TreatRating;
                 if (rev.MaterialsUpdate)
@@ -144,7 +150,9 @@ namespace GoogleWorkshop____BE.Models
                     takeAgainnTrues++;
             }
             var count = (double)this.Reviews.Count;
+            this.TreatRating = (double)(treatSum / count);
             this.TotalRating = (double)(ratingSum / count);
+            this.RatingValuesNums = ratingValuesNums;
             this.CoursesReviewsCounts = courseReviewCount;
             this.CoursesDifficultiesSum = courseDiffSum;
             this.CoursesMaterialsTrues = courseMaterialTrues;
