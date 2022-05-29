@@ -44,5 +44,15 @@ namespace GoogleWorkshop____BE.Models
                    string.Equals(Comment, review.Comment) &&
                    string.Equals(Course, review.Course);
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

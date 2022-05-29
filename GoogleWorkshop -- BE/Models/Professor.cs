@@ -43,6 +43,25 @@ namespace GoogleWorkshop____BE.Models
             TwitterProfile = twitterProfile;
         }
 
+        public Professor(ObjectId id, string name, string faculty, double totalRating, double diffRating, double treatRating, double materialsUpdateOdds, double recordsUpdateOdds, double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile, List<string> courses, List<Review> reviews)
+        {
+            Id = id;
+            Name = name;
+            Faculty = faculty;
+            TotalRating = totalRating;
+            DiffRating = diffRating;
+            TreatRating = treatRating;
+            MaterialsUpdateOdds = materialsUpdateOdds;
+            RecordsUpdateOdds = recordsUpdateOdds;
+            TakeAgainOdds = takeAgainOdds;
+            EmailAddr = emailAddr;
+            WebsiteAddr = websiteAddr;
+            LinkedinProfile = linkedinProfile;
+            TwitterProfile = twitterProfile;
+            Courses = courses;
+            Reviews = reviews;
+        }
+
         public override bool Equals(object obj)
         {
             return obj is Professor professor &&
@@ -96,6 +115,16 @@ namespace GoogleWorkshop____BE.Models
             this.MaterialsUpdateOdds = (double)(materialsTrues / count);
             this.RecordsUpdateOdds = (double)(recordsTrues / count);
             this.TakeAgainOdds = (double)(takeAgainnTrues / count);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
