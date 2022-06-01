@@ -139,7 +139,7 @@ namespace GoogleWorkshop____BE.Models
             {
                 for (int i = 0; i < this.Courses.Count; i++)
                 {
-                    if (this.Courses[i] == rev.Course)
+                    if (string.Equals(this.Courses[i], rev.Course))
                     {
                         courseReviewCount[i]++;
                         courseDiffSum[i] += rev.DiffRating;
