@@ -27,9 +27,30 @@ namespace GoogleWorkshop____BE.Controllers
         [HttpGet]
         public JsonResult Get()
         {
+            // GetByPupik();
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
             var dbList = dbClient.GetDatabase("TauRate").GetCollection<Professor>("Professors").AsQueryable();
             return new JsonResult(dbList);
+        }
+        [Route("ByPupik")]
+        [HttpGet]
+        public void GetByPupik()
+        {
+            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("GoogleWorkshopCon"));
+            var TauDB = dbClient.GetDatabase("TauRate");
+            var courseCollection = TauDB.GetCollection<Course>("Courses");
+            var lectCollection = TauDB.GetCollection<Professor>("Lecturers");
+            var lectList = lectCollection.AsQueryable<Professor>().ToList<Professor>();
+            foreach (var lect in lectList)
+            {
+                Console.WriteLine(lect.Name);
+                foreach (var courseId in lect.Courses)
+                {
+                    var pupik = courseCollection.AsQueryable<Course>().Where(course => course.Id.ToString().Equals(courseId));
+                    foreach (var blabla in pupik)
+                        Console.WriteLine(blabla.Name);
+                }
+            }
         }
         [Route("ByName")]
         [HttpGet]
