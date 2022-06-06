@@ -14,8 +14,8 @@ namespace GoogleWorkshop____BE.Models
 
         public Course(string courseNumber, string courseName)
         {
-            courseNumber = courseNumber;
-            courseName = courseName;
+            this.courseNumber = courseNumber;
+            this.courseName = courseName;
         }
 
         public override bool Equals(object obj)
