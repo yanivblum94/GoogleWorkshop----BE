@@ -11,17 +11,15 @@ namespace GoogleWorkshop____BE.Models
     {
 
         public ObjectId Id { get; set; }
-        public string Name { get; set; }
-        public string Faculty { get; set; }
-        public string CourseID { get; set; }
+        public string CourseNumber { get; set; }
+        public string CourseName { get; set; }
 
         public Course() { }
 
-        public Course(string name, string faculty, string courseID)
+        public Course(string courseNumber, string courseName)
         {
-            Name = name;
-            Faculty = faculty;
-            CourseID = courseID;
+            CourseNumber = courseNumber;
+            CourseName = courseName;
         }
 
         public override bool Equals(object obj)
