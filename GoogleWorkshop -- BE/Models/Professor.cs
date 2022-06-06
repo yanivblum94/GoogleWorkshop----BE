@@ -96,7 +96,7 @@ namespace GoogleWorkshop____BE.Models
                    string.Equals(WebsiteAddr, professor.WebsiteAddr) &&
                    string.Equals(TwitterProfile, professor.TwitterProfile) &&
                    string.Equals(LinkedinProfile, professor.LinkedinProfile) &&
-                   Enumerable.SequenceEqual(Courses.OrderBy(e => e), professor.Courses.OrderBy(e => e)) &&
+                   Enumerable.SequenceEqual(Courses.OrderBy(e => e.CourseNumber), professor.Courses.OrderBy(e => e.CourseNumber)) &&
                    Enumerable.SequenceEqual(Reviews.OrderBy(e => e), professor.Reviews.OrderBy(e => e));
         }
 
