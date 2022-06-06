@@ -24,7 +24,7 @@ namespace GoogleWorkshop____BE.Models
         public string WebsiteAddr { get; set; }
         public string LinkedinProfile { get; set; }
         public string TwitterProfile { get; set; }
-        public List<string> Courses { get; set; }
+        public List<Course> Courses { get; set; }
         public int[] RatingValuesNums { get; set; }
         public int[] CoursesReviewsCounts { get; set; }
         public int[] CoursesDifficultiesSum { get; set; }
@@ -38,7 +38,7 @@ namespace GoogleWorkshop____BE.Models
 
         public Professor(string name, string faculty, double totalRating, int[] ratingValuesNums, int[] coursesReviewsCounts, int[] coursesDifficultiesSum, int[] coursesMaterialsTrues,
             int[] coursesRecordsTrues, int[] coursesTakeAgainTrues, double diffRating, double treatRating, double materialsUpdateOdds, double recordsUpdateOdds,
-            double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile)
+            double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile, List<Course> courses)
         {
             Name = name;
             Faculty = faculty;
@@ -52,6 +52,7 @@ namespace GoogleWorkshop____BE.Models
             WebsiteAddr = websiteAddr;
             LinkedinProfile = linkedinProfile;
             TwitterProfile = twitterProfile;
+            Courses = courses;
             RatingValuesNums = ratingValuesNums;
             CoursesReviewsCounts = coursesReviewsCounts;
             CoursesDifficultiesSum = coursesDifficultiesSum;
@@ -60,7 +61,7 @@ namespace GoogleWorkshop____BE.Models
             CoursesTakeAgainTrues = coursesTakeAgainTrues;
     }
 
-        public Professor(ObjectId id, string name, string faculty, double totalRating, double diffRating, double treatRating, double materialsUpdateOdds, double recordsUpdateOdds, double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile, List<string> courses, List<Review> reviews)
+        public Professor(ObjectId id, string name, string faculty, double totalRating, double diffRating, double treatRating, double materialsUpdateOdds, double recordsUpdateOdds, double takeAgainOdds, string emailAddr, string websiteAddr, string linkedinProfile, string twitterProfile, List<Course> courses, List<Review> reviews)
         {
             Id = id;
             Name = name;
@@ -106,7 +107,7 @@ namespace GoogleWorkshop____BE.Models
             if (this.Reviews == null)
                 this.Reviews = new List<Review>();
             if (this.Courses == null)
-                this.Courses = new List<string>();
+                this.Courses = new List<Course>();
             if (this.CoursesReviewsCounts == null)
                 this.CoursesReviewsCounts = new int[maxNumCourses];
             if (this.CoursesDifficultiesSum == null)
@@ -118,8 +119,8 @@ namespace GoogleWorkshop____BE.Models
             if (this.CoursesTakeAgainTrues == null)
                 this.CoursesTakeAgainTrues = new int[maxNumCourses];
             this.Reviews.Add(rev);
-            if (!this.Courses.Contains(rev.Course))
-                this.Courses.Add(rev.Course);
+            // if (!this.Courses.Contains(rev.Course))
+            //     this.Courses.Add(rev.Course);
             CalcRating();
         }
 
