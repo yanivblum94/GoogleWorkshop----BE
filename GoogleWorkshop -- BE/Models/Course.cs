@@ -7,30 +7,27 @@ namespace GoogleWorkshop____BE.Models
     public class Course
     {
 
-        public ObjectId Id { get; set; }
-        public string CourseNumber { get; set; }
-        public string CourseName { get; set; }
+        public string courseNumber { get; set; }
+        public string courseName { get; set; }
 
         public Course() { }
 
-        public Course(ObjectId id, string courseNumber, string courseName)
+        public Course(string courseNumber, string courseName)
         {
-            Id = id;
-            CourseNumber = courseNumber;
-            CourseName = courseName;
+            courseNumber = courseNumber;
+            courseName = courseName;
         }
 
         public override bool Equals(object obj)
         {
             return obj is Course course &&
-                   Id.Equals(course.Id) &&
-                   CourseNumber == course.CourseNumber &&
-                   CourseName == course.CourseName;
+                   courseNumber == course.courseNumber &&
+                   courseName == course.courseName;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, CourseNumber, CourseName);
+            return HashCode.Combine(courseNumber, courseName);
         }
 
         public override string ToString()
