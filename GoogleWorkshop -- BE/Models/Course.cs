@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MongoDB.Bson;
 
 
@@ -16,8 +13,9 @@ namespace GoogleWorkshop____BE.Models
 
         public Course() { }
 
-        public Course(string courseNumber, string courseName)
+        public Course(ObjectId id, string courseNumber, string courseName)
         {
+            Id = id;
             CourseNumber = courseNumber;
             CourseName = courseName;
         }
@@ -25,12 +23,19 @@ namespace GoogleWorkshop____BE.Models
         public override bool Equals(object obj)
         {
             return obj is Course course &&
-                   Id.Equals(course.Id);
+                   Id.Equals(course.Id) &&
+                   CourseNumber == course.CourseNumber &&
+                   CourseName == course.CourseName;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id);
+            return HashCode.Combine(Id, CourseNumber, CourseName);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
