@@ -123,6 +123,11 @@ namespace GoogleWorkshop____BE.Models
                 this.CoursesRecordsTrues = new int[maxNumCourses];
             if (this.CoursesTakeAgainTrues == null)
                 this.CoursesTakeAgainTrues = new int[maxNumCourses];
+            for(int i=0; i < this.Reviews.Count; i++)
+            {
+                if (string.Equals(this.Reviews[i].User, rev.User))
+                    return;
+            }
             this.Reviews.Add(rev);
             // if (!this.Courses.Contains(rev.Course))
             //     this.Courses.Add(rev.Course);
